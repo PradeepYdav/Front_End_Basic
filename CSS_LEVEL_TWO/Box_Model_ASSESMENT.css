@@ -1,0 +1,39 @@
+h1{
+  font-family: 'Supermercado One', cursive;
+  text-align: center;
+}
+
+
+table{
+  margin: auto;
+}
+
+td{
+  height:400px;
+  width: 200px;
+  border: 6px solid white;
+}
+#one{
+  background-color: #247BA0;
+
+}
+
+#two{
+  background-color: #70C1B3;
+
+}
+
+#three{
+  background-color: #B2DBBF;
+
+}
+
+#four{
+  background-color: #F3FFBD;
+
+}
+
+#five{
+  background-color: #FF1654;
+
+}
