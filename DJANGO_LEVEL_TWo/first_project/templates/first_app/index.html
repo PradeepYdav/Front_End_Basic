@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First App</title>
+  </head>
+  <body>
+    <h1>Hi welocme to index page </h1>
+    <h1>Here is your Access Records Data</h1>
+    <div class="">
+      {% if access_records %}
+      <table border="2">
+        <thead>
+          <th>Site Name</th>
+          <th>Date Accessed</th>
+        </thead>
+
+        {% for acc in access_records %}
+        <tr>
+          <td>{{acc.name}}</td>
+          <td>{{acc.date}}</td>
+        </tr>
+        {% endfor%}
+
+      </table>
+      {% else %}
+      <p>No access RECORDS FOUND!</p>
+
+      {% endif %}
+
+
+
+    </div>
+
+  </body>
+</html>
