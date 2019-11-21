@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>users</title>
+  </head>
+  <body>
+    <h1>Welcome To Users Page:</h1>
+
+      {% if user_dict %}
+
+      <ol>
+        {% for us in user_dict %}
+        <li>Users Details:</li>
+        <ul>
+          <li>{{ us.first_name}}</li>
+          <li>{{ us.last_name }}</li>
+          <li>{{ us.email}}</li>
+        </ul>
+        {% endfor%}
+      </ol>
+
+
+      {%else%}
+      <p>No users Found</p>
+      {%endif%}
+
+
+  </body>
+</html>
